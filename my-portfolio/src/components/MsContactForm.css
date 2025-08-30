@@ -1,0 +1,102 @@
+.ms-contact {
+  padding: 5rem 6%;
+  background-color: #050507;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ms-contact-container {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ms-contact-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.ms-contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #61dafb;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ms-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ms-contact-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-contact-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.ms-contact-group input,
+.ms-contact-group textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ms-contact-group input:focus,
+.ms-contact-group textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(97, 218, 251, 0.5);
+}
+
+.ms-contact-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.ms-contact-error {
+  color: #ff4d4f;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.ms-contact-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #61dafb;
+  color: #050507;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.ms-contact-btn:hover {
+  background: #21dcf1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 220, 241, 0.4);
+}
+
+.ms-contact-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

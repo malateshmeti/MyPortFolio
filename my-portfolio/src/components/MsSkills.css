@@ -1,0 +1,53 @@
+/* Skills Section */
+.ms-skills {
+  padding: 4rem 6%;
+  background-color: #050507;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ms-skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ms-skills-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.ms-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* exactly 4 per row */
+  gap: 20px; /* spacing between cards */
+  justify-items: center;
+}
+
+.ms-skill-card {
+  width: 250px;   /* wider */
+  height: 140px;  /* shorter */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* center content vertically */
+  padding: 20px;  /* balanced padding */
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.ms-skill-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.ms-skill-icon {
+  width: 90px;   /* slightly smaller icon to fit rectangle */
+  height: 90px;
+  margin-bottom: 12px;
+}

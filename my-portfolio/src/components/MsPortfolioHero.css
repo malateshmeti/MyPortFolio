@@ -1,0 +1,173 @@
+/* Header / Navbar */
+.ms-header {
+  width: 100%;
+  padding: 1rem 6%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(5,5,7,0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.ms-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ms-header-left h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ms-header-right a {
+  color: #fff;
+  margin-left: 35px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.ms-header-right a:hover {
+  color: #3cb4ff;
+}
+
+/* Hero wrapper */
+.ms-hero {
+  min-height: 100vh;
+  padding: 6rem 6% 4rem; /* Adjusted top padding for fixed header */
+  background-color: #050507;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Grid */
+.ms-hero-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left text column */
+.ms-left {
+  flex: 1 1 60%;
+  max-width: 700px;
+  color: #fff;
+  margin-top: -0px; /* adjust value as needed */
+}
+
+.ms-title {
+  font-size: 3.5rem;
+  margin: 0 0 1rem;
+  font-weight: 800;
+}
+
+.ms-desc {
+  color: #cfcfcf;
+  font-size: 1.08rem;
+  line-height: 2.0;
+  margin: 0;
+}
+
+/* Right card */
+.ms-card {
+  width: 360px;
+  flex: 0 0 360px;
+}
+
+.ms-card-inner {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(60,180,255,0.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.ms-card-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Overlay */
+.ms-card-overlay {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.ms-card-text h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ms-card-text p {
+  margin: 2px 0 0;
+  color: #d6d6d6;
+  font-size: 0.88rem;
+}
+
+/* Button */
+.ms-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.18s ease;
+}
+
+.ms-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .ms-hero-grid {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .ms-card {
+    width: 320px;
+  }
+
+  .ms-card-img {
+    height: 420px;
+  }
+
+  .ms-title {
+    font-size: 2.6rem;
+  }
+}
