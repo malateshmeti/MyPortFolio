@@ -9,7 +9,6 @@ const MsContactForm = () => {
     email: "",
     message: "",
   });
-
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
 
@@ -19,17 +18,14 @@ const MsContactForm = () => {
 
   const validate = () => {
     const newErrors = {};
-    // Name validation
     if (!formData.name.trim()) newErrors.name = "Name is required";
     else if (!/^[a-zA-Z\s]+$/.test(formData.name))
       newErrors.name = "Please enter a valid name (letters only)";
 
-    // Email validation
     if (!formData.email.trim()) newErrors.email = "Email is required";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
       newErrors.email = "Please enter a valid email";
 
-    // Message validation
     if (!formData.message.trim()) newErrors.message = "Message is required";
 
     return newErrors;
@@ -47,19 +43,18 @@ const MsContactForm = () => {
     setErrors({});
     setSending(true);
 
-    // Send email via EmailJS
     emailjs
       .send(
-        "service_h3eavrd",   // replace with your EmailJS service ID
-        "template_wanbn9c",  // replace with your EmailJS template ID
+        "service_h3eavrd",   // Your EmailJS service ID
+        "template_wanbn9c",  // Your EmailJS template ID
         {
           from_name: formData.name,
-          from_email: formData.email,
+          from_email: formData.email,   // User's email for Reply-To
           from_phone: formData.phone,
           message: formData.message,
-          to_email: "msmeti4501@gmail.com", // target email
+          to_email: "msmeti4501@gmail.com", // Your verified EmailJS email
         },
-        "9aDHFbbP50PZ1BYON"     // replace with your EmailJS public key
+        "9aDHFbbP50PZ1BYON"   // Your EmailJS public key
       )
       .then(
         (response) => {
@@ -79,7 +74,7 @@ const MsContactForm = () => {
   return (
     <section className="ms-contact" id="contact">
       <div className="ms-contact-container">
-        <h2 className="ms-contact-title">Contact Me</h2>
+        <h2 className="ms-contact-title">Connect With Me</h2>
         <form className="ms-contact-form" onSubmit={handleSubmit}>
           <div className="ms-contact-group">
             <label>Name*</label>
@@ -104,7 +99,7 @@ const MsContactForm = () => {
           </div>
 
           <div className="ms-contact-group">
-            <label>Phone No</label>
+            <label>Phone (optional)</label>
             <input
               type="tel"
               name="phone"
