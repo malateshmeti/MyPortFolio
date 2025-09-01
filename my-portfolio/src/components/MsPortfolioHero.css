@@ -107,6 +107,7 @@
 }
 
 /* Overlay */
+/* Overlay */
 .ms-card-overlay {
   position: absolute;
   left: 12px;
@@ -115,59 +116,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 12px;
+  padding: 12px 14px;
   border-radius: 12px;
-  backdrop-filter: blur(6px);
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  
+  /* stronger background for readability */
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
+/* Text improvements */
 .ms-card-text h3 {
   margin: 0;
-  color: #fff;
-  font-size: 1rem;
+  color: #ffffff; /* pure white */
+  font-size: 1.05rem;
   font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* makes text readable on any background */
 }
 
 .ms-card-text p {
   margin: 2px 0 0;
-  color: #d6d6d6;
-  font-size: 0.88rem;
+  color: #e0e0e0; /* brighter gray */
+  font-size: 0.9rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-/* Button */
+/* Button contrast */
 .ms-btn {
   display: inline-block;
   padding: 8px 14px;
-  background: rgba(255,255,255,0.08);
+  background: #1c75b0;   /* solid accent color */
   border-radius: 10px;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: transform 0.18s ease;
+  border: none;
+  transition: transform 0.18s ease, background 0.2s ease;
 }
 
 .ms-btn:hover {
   transform: translateY(-2px);
-}
-
-/* Responsive */
-@media (max-width: 880px) {
-  .ms-hero-grid {
-    flex-direction: column;
-    gap: 28px;
-  }
-
-  .ms-card {
-    width: 320px;
-  }
-
-  .ms-card-img {
-    height: 420px;
-  }
-
-  .ms-title {
-    font-size: 2.6rem;
-  }
+  background: #1f9be5;  /* darker shade on hover */
 }

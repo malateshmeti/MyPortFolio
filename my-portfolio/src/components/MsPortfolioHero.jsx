@@ -31,15 +31,15 @@ const MsPortfolioHero = () => {
             </h1>
 
             <p className="ms-desc">
-              Backend-focused Java developer experienced in building scalable financial solutions using Spring Boot and SQL. 
-              Skilled in REST API development, system optimization, and efficient database management.<br />
+              Backend Developer with almost 2 years of experience in building scalable financial solutions using Java Spring Boot and SQL. Skilled in REST API development, 
+              system optimisation, and efficient database management. <br/>
               Currently expanding frontend skills to deliver full-stack solutions. Passionate about creating robust, user-friendly applications that drive business impact.
             </p>
           </div>
 
           <div className="ms-card">
             <div className="ms-card-inner">
-              <img src="/MyImage.jpeg" alt="profile dummy" className="ms-card-img" />
+              <img src="/MyImage4.jpeg" alt="profile dummy" className="ms-card-img" />
 
               <div className="ms-card-overlay">
                 <div className="ms-card-text">

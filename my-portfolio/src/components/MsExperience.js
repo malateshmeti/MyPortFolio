@@ -6,14 +6,22 @@ const experiences = [
     role: "Associate Software Development Engineer – E1",
     company: "Craft Silicon Asia, Bengaluru",
     duration: "Nov 2023 – Present (1.11 Years)",
-    skills: "Java, Spring Boot, Spring Security, Hibernate, REST API, SQL, MySQL, Git, Postman",
+    skills: "SQL Server, Database Design, Query Optimization, Stored Procedures, ETL, Performance Tuning, Java, Spring Boot, REST API, Git, MySQL, Postman",
     points: [
-      "Developed and secured REST APIs for financial operations (credit, debit, EMI) using Spring Boot & Spring Security.",
-      "Automated loan installment scheduling, reducing manual effort by 90%.",
-      "Optimized SQL queries and stored procedures, improving transaction performance by 30%.",
-      "Collaborated with cross-functional teams to deliver scalable and reliable financial solutions."
+      "Core Work (SQL Server):",
+      "- Specialized in SQL Server development, focusing on query optimization, stored procedures, and database performance tuning.",
+      "- Designed and managed efficient database schemas to support high-volume financial transactions.",
+      "- Built and optimized ETL workflows for seamless data processing and reporting.",
+      "- Collaborated with cross-functional teams to ensure reliable, secure, and scalable financial data systems.",
+      "",
+      "Additional Projects (Skill Development):",
+      "- Developed and secured REST APIs for financial operations using Spring Boot & Spring Security.",
+      "- Built loan management features like EMI scheduling and automated payment tracking.",
+      "- Practiced clean code, version control (Git), and API testing (Postman) to simulate real-world development workflows.",
+      "- Strengthened full-stack foundation by integrating backend APIs with frontend prototypes."
     ]
-  },
+  }
+,
   {
     role: "Salesforce Developer Intern",
     company: "Utilitarians Labs, Bengaluru",

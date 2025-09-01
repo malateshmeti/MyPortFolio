@@ -74,7 +74,7 @@ const MsContactForm = () => {
   return (
     <section className="ms-contact" id="contact">
       <div className="ms-contact-container">
-        <h2 className="ms-contact-title">Connect With Me</h2>
+        <h2 className="ms-contact-title">Connect Us</h2>
         <form className="ms-contact-form" onSubmit={handleSubmit}>
           <div className="ms-contact-group">
             <label>Name*</label>
@@ -99,7 +99,7 @@ const MsContactForm = () => {
           </div>
 
           <div className="ms-contact-group">
-            <label>Phone (optional)</label>
+            <label>Phone No</label>
             <input
               type="tel"
               name="phone"
